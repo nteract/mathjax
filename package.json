@@ -12,7 +12,7 @@
     "build": "tsc -b",
     "test": "jest"
   },
-  "repository": "https://github.com/nteract/nteract/tree/master/packages/mathjax",
+  "repository": "https://github.com/nteract/mathjax",
   "keywords": [
     "mathjax"
   ],
