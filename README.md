@@ -1,4 +1,4 @@
-# @nteract/actions
+# @nteract/mathjax
 
 This package contains two main components, `<MathJax.Context>` and `<MathJax.Node>`. The `<MathJax.Context>` component loads MathJax and makes it available to children elements via the React Context API. `<MathJax.Node>` takes raw text for rendering and uses MathJax to render formatted math.
 
