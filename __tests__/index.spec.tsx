@@ -7,7 +7,7 @@ import loadScript from "load-script";
 import { Node, Provider, Text } from "../src";
 
 const mathJaxUrl =
-  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.8/MathJax.js?config=TeX-MML-AM_CHTML";
 
 describe("MathJax", () => {
   test("Node can be renderered without provider", () => {

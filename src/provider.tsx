@@ -27,7 +27,7 @@ type State = MathJaxContextValue;
 export default class Provider extends React.Component<Props, State> {
   static defaultProps = {
     src:
-      "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML",
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.8/MathJax.js?config=TeX-MML-AM_CHTML",
     input: "tex",
     didFinishTypeset: null,
     delay: 0,
@@ -37,7 +37,7 @@ export default class Provider extends React.Component<Props, State> {
     onLoad: null,
     onError: (err: Error) => {
       console.error(err);
-    }
+    },
   };
 
   static getDerivedStateFromProps(props: Props, state: State) {
@@ -53,7 +53,7 @@ export default class Provider extends React.Component<Props, State> {
     this.state = {
       MathJax: undefined,
       input: this.props.input,
-      hasProviderAbove: true
+      hasProviderAbove: true,
     };
   }
 
@@ -110,7 +110,7 @@ export default class Provider extends React.Component<Props, State> {
     }
 
     this.setState({
-      MathJax
+      MathJax,
     });
   };
 
