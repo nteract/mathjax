@@ -14,7 +14,7 @@ exports[`MathJax Node can be renderered without provider 1`] = `
     onError={[Function]}
     onLoad={null}
     options={Object {}}
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.0/es5/tex-chtml-full.min.js"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
   >
     <MathJaxNode
       inline={false}
