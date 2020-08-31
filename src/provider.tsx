@@ -27,7 +27,7 @@ type State = MathJaxContextValue;
 export default class Provider extends React.Component<Props, State> {
   static defaultProps = {
     src:
-      "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.0/es5/tex-chtml-full.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML",
     input: "tex",
     didFinishTypeset: null,
     delay: 0,
