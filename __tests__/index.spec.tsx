@@ -6,8 +6,7 @@ jest.mock("load-script");
 import loadScript from "load-script";
 import { Node, Provider, Text } from "../src";
 
-const mathJaxUrl =
-  "https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-MML-AM_CHTML";
+const mathJaxUrl = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML";
 
 describe("MathJax", () => {
   test("Node can be renderered without provider", () => {
