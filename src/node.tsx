@@ -2,7 +2,7 @@ import * as React from "react";
 
 const types = {
   ascii: "asciimath",
-  tex: "tex"
+  tex: "tex",
 };
 
 import MathJaxContext, { MathJaxContextValue } from "./context";
@@ -115,14 +115,13 @@ export class MathJaxNode_ extends React.Component<Props & MathJaxContextValue> {
   setScriptText(text: string) {
     const inline = this.props.inline;
     const type = types[this.props.input];
-    if (!this.script) {
+
+    if (!this.script && this.nodeRef.current) {
       this.script = document.createElement("script");
       this.script.type = `math/${type}; ${inline ? "" : "mode=display"}`;
-
-      this.nodeRef.current!.appendChild(this.script);
+      this.nodeRef.current.appendChild(this.script);
     }
 
-    // It _should_ be defined at this point, we'll just return at this point now
     if (!this.script) {
       return;
     }
@@ -138,7 +137,7 @@ export class MathJaxNode_ extends React.Component<Props & MathJaxContextValue> {
 export default class MathJaxNode extends React.PureComponent<Props> {
   static defaultProps = {
     inline: false,
-    onRender: null
+    onRender: null,
   };
 
   render() {
