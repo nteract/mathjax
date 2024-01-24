@@ -23,8 +23,8 @@
     "load-script": "^1.0.0"
   },
   "peerDependencies": {
-    "react": "^16.13.0 || ^17.0.0",
-    "react-dom": "^16.13.0 || ^17.0.0"
+    "react": "^16.13.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.13.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@semantic-release/npm": "^7.1.3",
